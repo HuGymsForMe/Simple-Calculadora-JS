@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Digital';
+    src: url(fonts/ds-digital/DS-DIGI.TTF);
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(circle, rgba(249,248,227,1) 6%, rgba(255,245,92,1) 100%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#marca_calculadora{
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Digital';
+}
+
+#fondo_boton{
+    background-color: black;
+    border-radius: 15px;
+}
+
+button{
+    cursor: pointer;
+}
+
+#boton_modo{
+    border-radius: 15px;
+    min-width: 2rem;
+    min-height: 1.8rem;
+    background-image: url(img/modo-nocturno.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#caja_tabla{
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+}
+
+table{
+    padding: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.botones_calc{
+    background-color: #ffd861;
+    padding: .7rem;
+    width: 90%;
+    margin: .3rem;
+    border-radius: 6px;
+    font-family: 'Digital';
+    font-size: 1.4rem;
+    border: .5px solid #ccc;
+}
+
+.botones_calc:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.botones_calc:active{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px inset;
+}
+
+button[onclick="pulsarTeclaNum(this)"]{
+    background-color: #5fd018;
+}
+
+button[onclick="pulsarTeclaOperador(this)"]{
+    background-color: #189cd0;
+}
+
+
+#tecla_igual, #pantalla{
+    width: 98%;
+}
+
+#pantalla{
+    height: 2rem;
+    margin-bottom: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-top: .7rem;
+    padding-right: .5rem;
+    font-size: 1.4rem;
+    text-align: end;
+    font-family: 'Digital';
+}

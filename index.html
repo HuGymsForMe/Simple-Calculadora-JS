@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/calculadora.png" type="image/x-icon">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div>
+        <h1 id="titulo_calculadora">Mi Calculadora JS</h1>
+    </div>
+    <div id="caja_tabla">
+        <table>
+            <tr>
+                <td colspan="2"><p id="marca_calculadora">CASIO</p></td>
+                <td></td>
+                <td>
+                    <div id="fondo_boton">
+                        <button id="boton_modo" onclick="cambiarModo()"></button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4"><p id="pantalla"></p></td>
+            </tr>
+            <tr>
+                <td><button class="botones_calc botones_num" id="tecla_1" onclick="pulsarTeclaNum(this)">1</button></td>
+                <td><button class="botones_calc botones_num" id="tecla_2" onclick="pulsarTeclaNum(this)">2</button></td>
+                <td><button class="botones_calc botones_num" id="tecla_3" onclick="pulsarTeclaNum(this)">3</button></td>
+                <td><button class="botones_calc" id="tecla_sumar" onclick="pulsarTeclaOperador(this)">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="botones_calc botones_num" id="tecla_4" onclick="pulsarTeclaNum(this)">4</button></td>
+                <td><button class="botones_calc botones_num" id="tecla_5" onclick="pulsarTeclaNum(this)">5</button></td>
+                <td><button class="botones_calc botones_num" id="tecla_6" onclick="pulsarTeclaNum(this)">6</button></td>
+                <td><button class="botones_calc" id="tecla_restar" onclick="pulsarTeclaOperador(this)">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="botones_calc botones_num" id="tecla_7" onclick="pulsarTeclaNum(this)">7</button></td>
+                <td><button class="botones_calc botones_num" id="tecla_8" onclick="pulsarTeclaNum(this)">8</button></td>
+                <td><button class="botones_calc botones_num" id="tecla_9" onclick="pulsarTeclaNum(this)">9</button></td>
+                <td><button class="botones_calc" id="tecla_multiplicar" onclick="pulsarTeclaOperador(this)">*</button></td>
+            </tr>
+            <tr>
+                <td><button class="botones_calc" id="tecla_exponencial" onclick="pulsarTeclaOperador(this)">exp</button></td>
+                <td><button class="botones_calc botones_num" id="tecla_0" onclick="pulsarTeclaNum(this)">0</button></td>
+                <td><button class="botones_calc" id="tecla_resto" onclick="pulsarTeclaOperador(this)">%</button></td>
+                <td><button class="botones_calc" id="tecla_division" onclick="pulsarTeclaOperador(this)">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="botones_calc" id="tecla_seno" onclick="pulsarTeclaSen(this)">sen</button></td>
+                <td><button class="botones_calc" id="tecla_coseno" onclick="pulsarTeclaCos(this)">cos</button></td>
+                <td><button class="botones_calc" id="tecla_tangente" onclick="pulsarTeclaTan(this)">tan</button></td>
+                <td><button class="botones_calc" id="tecla_raiz" onclick="pulsarTeclaRaiz(this)">&#8730;</button></td>
+            </tr>
+            <tr>
+                <td><button class="botones_calc" id="tecla_logaritmo" onclick="pulsarTeclaLog(this)">log</button></td>
+                <td><button class="botones_calc" id="tecla_logaritmo_neperiano" onclick="pulsarTeclaLogNep(this)">ln</button></td>
+                <td><button class="botones_calc" id="tecla_clean" onclick="pulsarTeclaBorrado(this)">C</button></td>
+                <td><button class="botones_calc" id="tecla_borrado" onclick="pulsarTeclaBorradoProgresivo()">&lt;-</button></td>
+            </tr>
+            <tr>
+                <td colspan="4"><button class="botones_calc" id="tecla_igual" onclick="pulsarTeclaIgual(this)">=</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
